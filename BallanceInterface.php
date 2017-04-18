@@ -6,12 +6,17 @@
  * Date: 18.04.2017
  * Time: 3:08
  */
-class IBallanceDebet
+interface IBallance
+{
+    const creditPersent
+}
+
+class IBallanceDebet implements IBallance
 {
 
 }
 
-class IBallanceCredit
+class IBallanceCredit implements IBallance
 {
 
 }
