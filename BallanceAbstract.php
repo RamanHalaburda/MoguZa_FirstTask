@@ -50,14 +50,14 @@ class ABallanceDebet extends ABallance // дебетовый счет
     {
         $this->setBallance($this->getBallance() - $_n);
         $p = $this->doPercent();
-        echo 'Снято: '.$_n.'; Начислено процентами: '.$p.'; Текущий баланс: '.$this->getBallance().'<br>';
+        echo 'Снято: '.$_n.'; Начислено с процентами: '.$p.'; Текущий баланс: '.$this->getBallance().'<br>';
     }
 
     public function manyAdd($_n) // взнос денег на счет
     {
         $this->setBallance($this->getBallance() + $_n);
         $p = $this->doPercent();
-        echo 'Доабвлено: '.$_n.'; Начислено с процентами: '.$p.'; Текущий баланс: '.$this->getBallance().'<br>';
+        echo 'Добавлено: '.$_n.'; Начислено с процентами: '.$p.'; Текущий баланс: '.$this->getBallance().'<br>';
     }
 }
 
@@ -90,7 +90,7 @@ class ABallanceCredit extends ABallance // кредитный счет
     {
         $this->setBallance($this->getBallance() + $_n);
         $p = $this->doPercent();
-        echo 'Доабвлено: '.$_n.'; Списано с процентами: '.$p.'; Текущий баланс: '.$this->getBallance().'<br>';
+        echo 'Добавлено: '.$_n.'; Списано с процентами: '.$p.'; Текущий баланс: '.$this->getBallance().'<br>';
     }
 }
 
